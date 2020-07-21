@@ -1,0 +1,173 @@
+#btn-menu{
+    display: none;
+}
+header label{
+    float: right;
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+    margin: 6px 0;
+    
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0, 0,0, 0.3);
+}
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: auto;
+    height: auto;
+    
+    background: rgba(219, 171, 37, 0.849);
+    transition: all 0.5s;
+    transform: translateX(-100%)
+}
+
+
+.menu a {
+   
+    display: block;
+    color: #e9e7e7;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 2px solid white
+}
+
+.menu a:hover{
+    transition: all .3s ;
+    color:aquamarine;
+    border-right: 2px solid white;
+  
+}
+
+#btn-menu:checked ~ .menu{
+    transform: translateX(0%)
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        transition: all 0.5s;
+    }
+    .menu a {
+        border: none;
+       
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+
+
+#banner{
+    margin-top: 50px;
+    position: relative;
+}
+#banner img {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+}
+#banner h2{
+    font-size: 28px;
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover{
+    background: rgba(51, 51, 51, 0.5);
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+@media (min-width:768px) { 
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -100px;
+    }
+}
+
+
+#blog h3, h4 {
+    text-align: center;
+}
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blog1 .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blog article{
+    margin: 15px;
+
+}
+#blog1 article{
+    margin: 15px;
+
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}
+
+#blog1 img{
+    width: 100%;
+    max-width: 280px;
+}
+#blog2 img{
+    width: 200%;
+    max-width: 280px;
+}
+
+
+

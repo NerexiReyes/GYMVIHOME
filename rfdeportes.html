@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/rfdeportes.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<div>
+    <form name="registro" action="" method="POST">
+        
+        <section class="form-register">
+            <h1>Registro de deporte</h1>
+        <input class="form" type="text" name="cedula" id="cedula" placeholder="ingrese cedula" required><br>
+        <input class="form" type="text" name="nombre" id="nombre" placeholder="ingrese Nombre" required><br>
+        <input class="form" type="text" name="apellido" id="apellido" placeholder="ingrese apellido" required><br>
+        <input class="form" type="text" name="ciudad" id="ciudad" placeholder="ingrese ciudad" required><br> 
+        <input class="form" type="text" name="deporte" id="deporte" placeholder="Deporte inscripcion" required><br> 
+        <p><input class="btn" type="button" value="enviar" id="btn-registrar" onclick='capturar();'></p>
+    </section>
+    </form>
+</div>
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse " >
+              <tr>
+                <th scope="col">cedula</th>
+                <th scope="col">nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Deporte</th>
+                <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+          </table>
+        </div>
+
+    <script src="js/lista.js" ></script>
+</body>
+</html>
